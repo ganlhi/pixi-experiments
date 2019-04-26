@@ -5,8 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Solar System</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      body {
+        position: relative;
+        display: flex;
+        align-items: stretch;
+        justify-content: stretch;
+      }
+
+      #container {
+        flex: 1;
+        display: flex;
+        align-items: stretch;
+        justify-content: stretch;
+      }
+
+      canvas {
+        flex: 1;
+      }
+
+      body > select {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    </style>
   </head>
   <body>
+    <select>
+      <option value="none"></option>
+    </select>
+    <div id="container"></div>
     <script src="./main.ts"></script>
   </body>
 </html>
