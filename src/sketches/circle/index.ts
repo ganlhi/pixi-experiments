@@ -1,4 +1,4 @@
-import { Sketch } from '../sketch';
+import { Sketch } from 'src/sketch';
 
 export class Circle implements Sketch {
   setup(app: PIXI.Application): void {
