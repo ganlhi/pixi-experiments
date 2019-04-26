@@ -15,7 +15,7 @@ const app = new PIXI.Application({ antialias: true });
 
 el.appendChild(app.view);
 
-const hash = location.hash.slice(1);
+const hash = decodeURIComponent(location.hash.slice(1));
 
 /**
  * Sketch selector
